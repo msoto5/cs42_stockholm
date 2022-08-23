@@ -1,5 +1,5 @@
 # Stockholm
-Programa que encripta archivos en la carpeta </home/$USER/infection>
+Programa que encripta archivos en la carpeta /home/$USER/infection
 
 ## Manual
 ```
@@ -19,7 +19,10 @@ optional arguments:
 ## Especificaciones
 - Unicamente se encriptan los archivos con una de las extensiones a las que infecta [Wanacry](https://www.kaspersky.es/resource-center/threats/ransomware-wannacry). [Extensiones de Wanacry](https://gist.github.com/xpn/facb5692980c14df272b16a4ee6a29d5).
 - La clave de encriptación de guarda en "./filekey.key"
-- La encriptación y desencriptación se ha realizado con el moódulo ***fernet*** la biblioteca ***criptography***. * *Fernet* * tiene funciones integradas para la generaión de la clave,y el cifrado y el descifrado del texto entre otras. Para instalar la biblioteca * *criptography* * utilice: <pip install cryptography>
+- La encriptación y desencriptación se ha realizado con el moódulo ***fernet*** la biblioteca ***criptography***. *Fernet* tiene funciones integradas para la generaión de la clave,y el cifrado y el descifrado del texto entre otras. Para instalar la biblioteca *criptography* utilice: 
+```
+pip install cryptography>
+```
 
 ## Ejemplos de uso
 - Muestra la ayuda del programa
@@ -30,11 +33,11 @@ $ python3 stockholm.py -h
 ```
 $ python3 stockholm.py -v
 ```
-- Encripta los archivos de </home/$USER/infection>
+- Encripta los archivos de '/home/$USER/infection'
 ```
 $ python3 stockholm.py
 ```
-- Desencripta los archivos de </home/$USER/infection>
+- Desencripta los archivos de '/home/$USER/infection'
 ```
 $ python3 stockholm.py -r filekey.key
 ```
