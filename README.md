@@ -21,7 +21,7 @@ optional arguments:
 - La clave de encriptación de guarda en "./filekey.key"
 - La encriptación y desencriptación se ha realizado con el moódulo ***fernet*** la biblioteca ***criptography***. *Fernet* tiene funciones integradas para la generaión de la clave,y el cifrado y el descifrado del texto entre otras. Para instalar la biblioteca *criptography* utilice: 
 ```
-pip install cryptography>
+pip install cryptography
 ```
 
 ## Ejemplos de uso
