@@ -1,5 +1,5 @@
 # Stockholm
-Encripts files in /home/$USER/infection directory
+Programa que encripta archivos en la carpeta /home/$USER/infection
 
 ## Manual
 ```
@@ -24,24 +24,20 @@ optional arguments:
 pip install cryptography
 ```
 
-## Examples
-- Show program help:
+## Ejemplos de uso
+- Muestra la ayuda del programa
 ```
 $ python3 stockholm.py -h
 ```
-
-- Print program version:
+- Mostrar la versión del programa
 ```
 $ python3 stockholm.py -v
 ```
-
-- Encript files in '/home/$USER/infection' directory
+- Encripta los archivos de '/home/$USER/infection'
 ```
 $ python3 stockholm.py
 ```
-
-- Decript files in '/home/$USER/infection' directory
-Desencripta los archivos de '/home/$USER/infection'
+- Desencripta los archivos de '/home/$USER/infection'
 ```
 $ python3 stockholm.py -r filekey.key
 ```
