@@ -45,23 +45,21 @@ ext_lst = ('.123', '.3dm', '.3ds', '.3g2', '.3gp', '.602', '.7z', '.ARC',
 
 def leer_argumentos():
     parser = argparse.ArgumentParser(
-        description= "Infecto /home/$USER/infection")
+        description= "Encripts files in /home/$USER/infection directory")
 
     parser.add_argument(
         "-r", "--reverse", 
-        help = "Junto con la clave introducida, revierte la infeccion",
+        help = "Decript files in '/home/$USER/infection'. Key file must be specified as argument.",
         metavar = "KEY"
         )
     parser.add_argument(
         "-s", "--silent",
-        help = "Si esta activa, no se mostrara ningun output (no se \
-        mostraranlos archivos cifrados durante el proceso",
+        help = "No output will be shown in terminal",
         action = 'store_true'
         )
     parser.add_argument(
         "-v", "--version",
-        help = "Muestra la version del programa. En caso de ejecutarse junto \
-        a -s, -s es ignorada.",
+        help = "Shows program version",
         action = 'store_true'
         )
 
